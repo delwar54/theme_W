@@ -1,0 +1,720 @@
+/*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+p {
+  font-size: 16px;
+}
+.from_logo {
+  float: right;
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-top: 0;
+  padding: 0 27px 0 0;
+  position: absolute;
+  top: 420px;
+  width: 287px;
+}
+html {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between images, videos, audio and canvas and the bottom of
+ * their containers: h5bp.com/i/440
+ */
+
+audio,
+canvas,
+img,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browse Happy prompt
+   ========================================================================== */
+
+.browsehappy {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Image replacement
+ */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    /* IE 6/7 fallback */
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+
+    }
+}
+
+/*Custom css*/
+
+body{
+	font-family: 'Lato', sans-serif;
+}
+h2{color:#77c242}
+p{color:#aeaeae;}
+
+
+
+#header_area{background: #2c2b2b none repeat scroll 0 0;
+max-width: 100%;}
+#header_buttom_area{background: #fff none repeat scroll 0 0;
+max-width: 100%;}
+.header_logo img {
+  margin-top: 10px;
+  width: 100%;
+}
+.header_left_social {
+  float: right;
+  margin: 0;
+  padding: 0;
+}
+.header_left_social {
+  float: left;
+  margin-top: 10px;
+  padding: 0;
+}
+.main_menu {
+  float: right;
+  margin: 0;
+  padding: 0;
+}
+
+.header_right_social{margin: 10px 0;}
+.header_left_social ul{padding:0}
+.header_left_social li{list-style:none;display:inline-block}
+.header_right_social li{list-style:none;display:inline-block}
+.header_left_social li a i {
+  background: #fff none repeat scroll 0 0;
+  border-radius: 2px;
+  color: #2c2b2b;
+  font-size: 16px;
+  height: 20px;
+  line-height: 21px;
+  margin-right: 26px;
+  text-align: center;
+  width: 20px;
+}
+.navbar-nav > li > a {
+  color: #2b2b2b;
+  text-transform: uppercase;
+}
+.navbar-nav li a:hover {background:none
+}
+.fa.fa-search {
+  color: #77c242;
+  display: inline-block;
+  font-size: 21px;
+  height: 31px;
+  line-height: 30px;
+  width: 33px;
+}
+.btn.btn-default.search_benner {
+  border: medium none;
+  border-radius: 9px;
+  margin-left: -12px;
+  position: absolute;
+}
+.form-control.benner_search {
+  background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+  border: 2px solid #fff;
+  border-radius: 6px;
+  color: #fff;
+  font-size: 18px;
+  height: 43px;
+  width: 285px;
+}
+.header_right_social a {
+  color: #fff;
+  margin-left: 25px;
+  text-decoration: none;
+}
+.navbar-header{}
+.nav{margin:0;}
+.navbar-default {
+  background-color: #fff;
+  border-color: #fff;
+  margin: 3% 0;
+  padding: 0;
+}
+.bennar_area {
+  background-image: url("img/bennar.jpg");
+  background-repeat: no-repeat;
+  color: #fff;
+  max-width: 100%;
+  overflow: hidden;
+  padding: 2% 0;
+  position: relative;
+  text-align: center;
+}
+.overlay{
+position:absolute;
+width:100%;
+height:100%;
+top:0;left:0;
+}
+.benner_content{ position: relative;
+    z-index: 99;}
+.benner_content h2{font-size: 48px;
+    line-height: 50px;
+    padding-top: 20px;color:#fff}
+.benner_content h4{font-size: 24px;
+    line-height: 30px;}
+.navbar-form{ padding: 70px 0;}
+#offer_area{margin:8% 0;}
+#new_area{margin:8% 0;}
+.main_content{text-align:center;}
+.main_content p{
+padding:40px 0;	
+}
+.offer_main_content h2{}
+.single_offer_content, .single_featured_content, .single_new_content{background:#E6E6E6;color:#959595;text-align: center;}
+.single_offer_content img{
+  width: 100%;
+}
+.single_offer_content > h4 {
+  font-size: 18px;
+  line-height: 29px;
+  padding: 10px 8px 8px;
+}
+
+.single_offer_content{
+  overflow: hidden;
+  position: relative;
+}
+.image-caption {
+  background: rgba(0, 0, 0, 0) url("img/free_hover.png") repeat scroll 100% 100%;
+  display: none;
+  height: 56%;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+}
+
+.single_offer_content:hover .image-caption{
+  display: block;
+}
+.single_offer_content:hover h4{
+   color:#26b24b;
+}
+
+
+
+.single_offer_content h5 {
+  line-height: 14px;
+
+}
+.single_frature_content_meneg {
+  padding: 7px 16px;
+}
+
+
+.single_featured_content, .single_new_content{
+  overflow: hidden;
+  position: relative;
+}
+.single_featured_content:hover .overlay_add_to_detalis{
+  display: block;
+}
+.single_new_content:hover .overlay_add_new_detalis{
+  display: block;
+}
+.overlay_add_new_detalis{
+  background: rgba(0, 0, 0, 0) url("img/free_hover.png") repeat scroll 100% 100%;
+  display: none;
+  height: 83%;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  width: 100%;padding-top:36%;
+  z-index: 2;
+}
+.overlay_add_to_detalis{
+  background: rgba(0, 0, 0, 0) url("img/hover_img.png") repeat scroll 100% 100%;
+  display: none;
+  height: 60%;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  width: 100%;padding-top:36%;
+  z-index: 2;
+}
+.single_featured_content img, .single_new_content img {
+  width: 100%;
+}
+.overlay_add_new_detalis > a {
+  color: #fff;
+  font-size: 16px;
+  padding: 10px;
+  text-decoration: none;
+}
+.overlay_add_to_detalis > a {
+  color: #fff;
+  font-size: 16px;
+  padding: 10px;
+  text-decoration: none;
+}
+.single_new_content > h4 {
+  font-size: 21px;
+  line-height: 25px;
+  padding: 10px 0;
+}
+ h4 {
+  line-height: 28px;
+}
+.add_to_detalis{
+  background: #1e1d1d none repeat scroll 0 0;
+  font-size: 16px;
+  line-height: 16px;
+  padding: 8px 0;
+}
+.single_featured_content p{background: #1e1d1d none repeat scroll 0 0;
+display: inline-block;
+font-size: 16px;
+height: 32px;
+line-height: 16px;
+margin: 0;
+padding: 8px 0 0;
+width: 100%;
+}
+.add_to_detalis a {
+  color: #fff;
+  margin: 6px 21px;
+  text-decoration: none;
+}
+.more_item {
+  margin-top: 7%;
+  text-align: center;
+}
+.more_item a {
+  background: #77c242 none repeat scroll 0 0;
+  color: #fff;
+  font-size: 16px;
+  padding: 13px 36px;text-decoration:none
+}
+.featured_main_content{}
+.single_featured_content{}
+.new_main_content{}
+.single_new_content{}
+#service{background:url("img/service_bg.jpg")no-repeat 100% 100%; padding: 4% 0;}
+.service_content {
+  margin: 4% 0;
+}
+.service_content > p {
+  color: #25b24a;
+}
+.service_content img {
+  margin-right: 10px;
+}
+.ingle_service {
+  text-align: center;
+  background:#F26C4F
+}
+.ingle_service>.fa {
+  color: #fff;
+  font-size: 49px;
+  padding: 50px 0;
+}
+.ingle_service a {
+  background: #77c242 none repeat scroll 0 0;
+  color: #fff;
+  display: inline-block;
+  font-size: 18px;
+  padding: 14px 0;
+  text-decoration: none;
+  width: 100%;
+}
+.ingle_service a:hover{
+  background: #D4D4D4 none repeat scroll 0 0;
+  color: #26b24b;
+}
+.see_details {
+  height: 30px;
+  margin: 5% 0;
+}
+.see_details > a {
+  border: 1px solid #77c242;
+  color: #77c242;
+  padding: 9px 18px;text-decoration:none;
+}
+#choose_theme{padding:5% 0}
+.single_choose_area{}
+.single_choose {
+  margin: 10% 0;
+}
+.single_choose>.fa{background: #f26c4f none repeat scroll 0 0;
+color: #fff;
+font-size: 25px;
+height: 45px;
+line-height: 45px;
+text-align: center;
+width: 45px;}
+.single_choose > h4 {
+  color: #959595;
+  font-size: 18px;
+  text-align: left; margin-bottom: 10px;
+}
+#counting_area{background:#26B24B;color:#fff}
+.single_count_area{}
+.ingle_count{}
+.ingle_count > h3 {
+  font-size: 36px;
+  margin: 0;
+}
+.ingle_count > p {
+ color:#fff
+}
+.ingle_count {
+  border: 7px double;
+  height: 135px;
+  margin: 38% 0;
+  padding-top: 11%;
+  text-align: center;
+  width: 230px;
+}
+.foorer_area{background:#323638; padding: 6% 0;}
+.single_footer_image > img {
+  width: 100%;
+}
+.testi{}
+.footer_content{}
+.single_footer_image{}
+.footer_content > h3 {
+  color: #fff;margin-bottom: 17%;text-transform:uppercase;
+}
+.single_footer_cliper_image > img {
+  margin: 11px 11px 0 0;
+  width: 73px;
+}
+.sub_btn {
+  background: #77c242 none repeat scroll 0 0;
+  font-size: 20px;
+  line-height: 31px;
+  margin: 0;
+  width: 100%;
+}
+.form-control {
+  background: #4f4f4f none repeat scroll 0 0;
+  border: medium none;
+}
+.single_footer_content{text-align:center;margin:25px 0;}
+.single_footer_content > p {
+  color: #fff;font-size:14px;
+}
+.single_footer_image ul{margin:0;padding:0}
+.single_footer_image ul li{list-style:none}
+.single_footer_image ul li a {line-height:30px;
+  color: #fff;font-size:14px;text-decoration:none
+}
+.single_footer_content>.fa {
+  color: #fff;
+  font-size: 26px;
+  margin: 10px 0;
+}
+
+h4 {
+  margin: 0;
+  padding: 10px 0 0;
+  text-align: center;
+}
+
+.footer > p {
+  font-size: 14px;
+  padding: 5px;
+  text-align: center;
+}
+.footer_area {
+  padding: 10px;
+}
+/*count up*/
+#shiva
+{
+  width: 100px;
+	height: 100px;
+	background: red;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	border-radius: 50px;
+  float:left;
+  margin:5px;
+}
+
+
+
+
+
+
+
+
